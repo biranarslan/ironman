@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ironman,marvel,ironman biography,ironman movies,tony stark"
+    />
+    <title>Iron Man - Biography | Movies</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="suits.html">Suit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img
+          src="../media/img/Iron-Man-Logo.png"
+          width="120px"
+          alt="Logo"
+          class="logo"
+        />
+      </div>
+    </nav>
+
+    <div class="movie-container">
+        <h3 class="profile-title">Movie order</h3>
+</p>
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 8</div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/8ugaeA-nMTc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 8</div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/wKtcmiifycU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 8</div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/eOrNdBpGMv8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 8</div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Ke1Y3P9D0Bc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 8</div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/tmeOjFno6Do"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 8</div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dKrVegVI0Us"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 8</div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/6ZfuNTqbHE8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 8</div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/TcMBFSGVi1c"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+      </div>
+    </div>
+    <footer class="footer">Biran Arslan - 2023 ©</footer>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>

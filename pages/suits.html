@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ironman,marvel,ironman biography,ironman movies,tony stark"
+    />
+    <title>Iron Man - Biography | Suit</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="suits.html">Suit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img
+          src="../media/img/Iron-Man-Logo.png"
+          width="120px"
+          alt="Logo"
+          class="logo"
+        />
+      </div>
+    </nav>
+
+    <div class="suit-container">
+      <h3 class="profile-title">360 View of Iron Man</h3>
+
+      <model-viewer
+        alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+        src="../media/other/ironman.glb"
+        ar
+        environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr"
+        shadow-intensity="1"
+        camera-controls
+        touch-action="pan-y"
+      ></model-viewer>
+    </div>
+
+    <script>
+      document
+        .querySelector("#model-viewer")
+        .addEventListener("ar-status", (event) => {
+          if (event.detail.status === "failed") {
+            const error = document.querySelector("#error");
+            error.classList.remove("hide");
+            error.addEventListener("transitionend", (event) => {
+              error.classList.add("hide");
+            });
+          }
+        });
+    </script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
+    ></script>
+    <footer class="footer">Biran Arslan - 2023 ©</footer>
+
+  </body>
+</html>
