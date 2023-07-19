@@ -1,9 +1,9 @@
-# Avengers Iron Man Fanpage
-
 <p align="center">
-  <img src="https://github.com/biranarslan/ironman/blob/main/media/img/ironman-head.png" width="100%">
+  <img src="https://github.com/biranarslan/ironman/blob/main/media/img/ironman-head.png" width="150" />
 </p>
-Welcome to the Avengers Iron Man Fanpage! This project was created for fun and to celebrate one of the most iconic and beloved characters in the Marvel Cinematic Universe (MCU) - Iron Man!
+<h1 align="center">Avengers Iron Man Fanpage</h1>
+
+Welcome to the Avengers Iron Man Fanpage! This project was created for fun and to celebrate one of the most iconic and beloved characters in the Marvel CinematicUniverse (MCU) - Iron Man!
 
 ## About
 
